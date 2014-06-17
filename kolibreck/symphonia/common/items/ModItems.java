@@ -43,61 +43,61 @@ public final class ModItems
 	public static void initialize()
 	{
 		woodReed = new ItemWoodReed();
-    	woodShaft = new ItemWoodShaft();
-    	ironMouthpiece = new ItemIronMouthpiece();
-    	goldHorn = new ItemGoldHorn();
-    	goldValves = new ItemGoldValves();
-    	stainedShaft = new ItemStainedShaft();
-    	keySystem = new ItemKeySystem();
-    	goldTube = new ItemGoldTube();
-    	
-    	woodFlute = new ItemWoodFlute();
-    	trumpet = new ItemTrumpet();
-    	clarinet = new ItemClarinet();
-    	tuba = new ItemTuba();
-    	guitar = new ItemGuitar();
-    	
-    	RegisterHelper.RegisterItem(woodReed);
-    	RegisterHelper.RegisterItem(woodShaft);
-    	RegisterHelper.RegisterItem(ironMouthpiece);
-    	RegisterHelper.RegisterItem(goldHorn);
-    	RegisterHelper.RegisterItem(goldValves);
-    	RegisterHelper.RegisterItem(stainedShaft);
-    	RegisterHelper.RegisterItem(keySystem);
-    	RegisterHelper.RegisterItem(goldTube);
-    	
-    	RegisterHelper.RegisterItem(woodFlute);
-    	RegisterHelper.RegisterItem(trumpet);
-    	RegisterHelper.RegisterItem(clarinet);
-    	RegisterHelper.RegisterItem(tuba);
-    	RegisterHelper.RegisterItem(guitar);
-    	
-    	initializeRenderers();
-    	addRecipes();
+	    	woodShaft = new ItemWoodShaft();
+	    	ironMouthpiece = new ItemIronMouthpiece();
+	    	goldHorn = new ItemGoldHorn();
+	    	goldValves = new ItemGoldValves();
+	    	stainedShaft = new ItemStainedShaft();
+	    	keySystem = new ItemKeySystem();
+	    	goldTube = new ItemGoldTube();
+	    	
+	    	woodFlute = new ItemWoodFlute();
+	    	trumpet = new ItemTrumpet();
+	    	clarinet = new ItemClarinet();
+	    	tuba = new ItemTuba();
+	    	guitar = new ItemGuitar();
+	    	
+	    	RegisterHelper.RegisterItem(woodReed);
+	    	RegisterHelper.RegisterItem(woodShaft);
+	    	RegisterHelper.RegisterItem(ironMouthpiece);
+	    	RegisterHelper.RegisterItem(goldHorn);
+	    	RegisterHelper.RegisterItem(goldValves);
+	    	RegisterHelper.RegisterItem(stainedShaft);
+	    	RegisterHelper.RegisterItem(keySystem);
+	    	RegisterHelper.RegisterItem(goldTube);
+	    	
+	    	RegisterHelper.RegisterItem(woodFlute);
+	    	RegisterHelper.RegisterItem(trumpet);
+	    	RegisterHelper.RegisterItem(clarinet);
+	    	RegisterHelper.RegisterItem(tuba);
+	    	RegisterHelper.RegisterItem(guitar);
+	    	
+	    	initializeRenderers();
+	    	addRecipes();
 	}
 	
 	private static void addRecipes()
-    {
+	{
 		// Flute Recipes
-    	GameRegistry.addRecipe(new ItemStack(woodReed), new Object[]{ "ABA", 'A', Items.stick, 'B', Items.reeds });
-    	GameRegistry.addRecipe(new ItemStack(woodShaft), new Object[]{ "AA", "AA", "AA", 'A', Items.stick });  	
-    	GameRegistry.addRecipe(new ItemStack(woodFlute), new Object[]{ "A", "B", "B", 'A', woodReed, 'B', woodShaft });
-    	
-    	// Trumpet Recipes
-    	GameRegistry.addRecipe(new ItemStack(ironMouthpiece), new Object[]{ "A  ", " AA", "A  ", 'A', Items.iron_ingot });
-    	GameRegistry.addRecipe(new ItemStack(goldHorn), new Object[]{ "  A", "AA ", "  A", 'A', Items.gold_ingot });
-    	GameRegistry.addRecipe(new ItemStack(goldValves), new Object[]{ "BBB", "AAA", "AAA", 'A', Items.gold_ingot, 'B', Blocks.wooden_button });
-    	GameRegistry.addRecipe(new ItemStack(trumpet), new Object[]{ "ABC", 'A', ironMouthpiece, 'B', goldValves, 'C', goldHorn });
-    	
-    	// Clarinet Recipes
-    	GameRegistry.addShapelessRecipe(new ItemStack(stainedShaft), new Object[]{ new ItemStack(Items.dye, 1, 0), ModItems.woodShaft });
-    	GameRegistry.addRecipe(new ItemStack(keySystem), new Object[]{ "AB", "AB", "AB", 'A', Items.iron_ingot, 'B',Blocks.wooden_button });
-    	GameRegistry.addRecipe(new ItemStack(clarinet), new Object[]{ " A", "BC", "BC", 'A', woodReed, 'B', keySystem, 'C', stainedShaft});
-    	
-    	// Tuba Recipes
-    	GameRegistry.addRecipe(new ItemStack(goldTube), new Object[]{"AA", "AA", "AA", 'A', Items.gold_ingot});
-    	GameRegistry.addRecipe(new ItemStack(tuba), new Object[]{" AB", "CAD", " AA", 'A', goldTube, 'B', goldHorn, 'C', ironMouthpiece, 'D', goldValves});
-    }
+		GameRegistry.addRecipe(new ItemStack(woodReed), new Object[]{ "ABA", 'A', Items.stick, 'B', Items.reeds });
+		GameRegistry.addRecipe(new ItemStack(woodShaft), new Object[]{ "AA", "AA", "AA", 'A', Items.stick });  	
+		GameRegistry.addRecipe(new ItemStack(woodFlute), new Object[]{ "A", "B", "B", 'A', woodReed, 'B', woodShaft });
+		
+		// Trumpet Recipes
+		GameRegistry.addRecipe(new ItemStack(ironMouthpiece), new Object[]{ "A  ", " AA", "A  ", 'A', Items.iron_ingot });
+		GameRegistry.addRecipe(new ItemStack(goldHorn), new Object[]{ "  A", "AA ", "  A", 'A', Items.gold_ingot });
+		GameRegistry.addRecipe(new ItemStack(goldValves), new Object[]{ "BBB", "AAA", "AAA", 'A', Items.gold_ingot, 'B', Blocks.wooden_button });
+		GameRegistry.addRecipe(new ItemStack(trumpet), new Object[]{ "ABC", 'A', ironMouthpiece, 'B', goldValves, 'C', goldHorn });
+		
+		// Clarinet Recipes
+		GameRegistry.addShapelessRecipe(new ItemStack(stainedShaft), new Object[]{ new ItemStack(Items.dye, 1, 0), ModItems.woodShaft });
+		GameRegistry.addRecipe(new ItemStack(keySystem), new Object[]{ "AB", "AB", "AB", 'A', Items.iron_ingot, 'B',Blocks.wooden_button });
+		GameRegistry.addRecipe(new ItemStack(clarinet), new Object[]{ " A", "BC", "BC", 'A', woodReed, 'B', keySystem, 'C', stainedShaft});
+		
+		// Tuba Recipes
+		GameRegistry.addRecipe(new ItemStack(goldTube), new Object[]{"AA", "AA", "AA", 'A', Items.gold_ingot});
+		GameRegistry.addRecipe(new ItemStack(tuba), new Object[]{" AB", "CAD", " AA", 'A', goldTube, 'B', goldHorn, 'C', ironMouthpiece, 'D', goldValves});
+	}
 	
 	private static void initializeRenderers()
 	{
