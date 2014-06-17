@@ -1,0 +1,21 @@
+itemGroup.Symphonia=Symphonia
+
+tile.testOre.name=Test Ore
+tile.composingDesk.name=Composing Desk
+
+item.testIngot.name=Test Ingot
+item.testPickaxe.name=Test Pickaxe
+item.woodReed.name=Wood Reed
+item.woodShaft.name=Wood Shaft
+item.ironMouthpiece.name=Iron Mouthpiece
+item.goldHorn.name=Gold Horn
+item.goldValves.name=Gold Valves
+item.stainedShaft.name=Stained Shaft
+item.keySystem.name=Key System
+item.goldTube.name=Gold Tube
+
+item.woodFlute.name=Wood Flute
+item.trumpet.name=Trumpet
+item.clarinet.name=Clarinet
+item.tuba.name=Tuba
+item.guitar.name=Guitar

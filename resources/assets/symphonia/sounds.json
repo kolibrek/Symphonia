@@ -1,0 +1,9 @@
+{
+	"flutenote1": {"category": "player", "sounds":[{"name": "flutenote1", "stream": false}]},
+	"trumpetnote1": {"category": "player", "sounds":[{"name": "trumpetnote1", "stream": false}]},
+	"trumpetnote2": {"category": "player", "sounds":[{"name": "trumpetnote2", "stream": false}]},
+	"clarinetnote1": {"category": "player", "sounds":[{"name": "clarinetnote1", "stream": false}]},
+	"tubanote1": {"category": "player", "sounds":[{"name": "tubanote1", "stream": false}]},
+	"guitarnote1": {"category": "player", "sounds":[{"name": "guitarnote1", "stream": false}]},
+	"guitarnote2": {"category": "player", "sounds":[{"name": "guitarnote2", "stream": false}]}
+}
