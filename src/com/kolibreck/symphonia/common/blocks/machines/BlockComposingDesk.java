@@ -7,10 +7,8 @@ import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 
-public class BlockComposingDesk extends Block {
-
-	
-	
+public class BlockComposingDesk extends Block
+{
 	public BlockComposingDesk()
 	{
 		super(Material.wood);

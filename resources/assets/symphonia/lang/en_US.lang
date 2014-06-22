@@ -2,6 +2,7 @@ itemGroup.Symphonia=Symphonia
 
 tile.testOre.name=Test Ore
 tile.composingDesk.name=Composing Desk
+tile.advancedNoteBlock.name=Advanced Noteblock
 
 item.testIngot.name=Test Ingot
 item.testPickaxe.name=Test Pickaxe

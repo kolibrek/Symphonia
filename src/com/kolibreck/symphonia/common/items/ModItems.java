@@ -40,7 +40,7 @@ public final class ModItems
 	public static Item tuba;
 	public static Item guitar;
 	
-	public static void initialize()
+	public static void preinitialize()
 	{
 		woodReed = new ItemWoodReed();
     	woodShaft = new ItemWoodShaft();
@@ -73,7 +73,11 @@ public final class ModItems
     	RegisterHelper.RegisterItem(guitar);
     	
     	initializeRenderers();
-    	addRecipes();
+	}
+	
+	public static void initialize()
+	{
+		addRecipes();
 	}
 	
 	private static void addRecipes()

@@ -40,6 +40,7 @@ public final class SymphoniaCreativeTab extends CreativeTabs
 		this.list = list;
 		
 		addBlock(ModBlocks.composingDesk);
+		addBlock(ModBlocks.advancedNote);
 		
 		addItem(ModItems.woodFlute);
 		addItem(ModItems.trumpet);
