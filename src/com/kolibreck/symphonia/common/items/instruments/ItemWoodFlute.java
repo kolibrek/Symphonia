@@ -1,5 +1,6 @@
 package com.kolibreck.symphonia.common.items.instruments;
 
+import com.kolibreck.symphonia.common.entities.EntityMagicCircle;
 import com.kolibreck.symphonia.common.help.Reference;
 
 import net.minecraft.entity.player.EntityPlayer;
@@ -22,6 +23,8 @@ public class ItemWoodFlute extends ItemInstrument {
 		{
 			float pitch = itemRand.nextFloat() + 0.5F;
 			player.worldObj.playSoundAtEntity(player, Reference.MODID + ":" + "flutenote1", 1F, pitch);
+			EntityMagicCircle circle = new EntityMagicCircle(player);
+			world.spawnEntityInWorld(circle);
 		}
 			
 		return flute;
